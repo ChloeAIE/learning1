@@ -1,7 +1,243 @@
 #include <iostream>
 
-int main() 
-{	/*                                                             SWITCH STATEMENT CALCULATOR
+
+
+
+
+/*                                                           FACTORAL CALC FUNCTION
+int factoralCalc(int input)
+{
+	std::cin >> input;
+
+	int value = 0;
+	int totalValue = 0;
+	value = input;
+	totalValue = input;
+
+	for (int i = input; i > 0; i--) 
+	{
+		if (value == input) 
+		{
+			value--;
+		}
+		else 
+		{
+			totalValue = totalValue * i;
+		}
+	}
+
+	std::cout << "Total value is: " << totalValue << std::endl;
+
+	return totalValue;
+} */
+
+
+
+/*int fibSeq(int n)
+{
+	int numbersRan = 0;
+	int totalValue = 0;
+	int currentValue = 0;
+	int lastValue1 = 0;
+	for (int i = numbersRan; i <= n; i++) 
+	{
+		if (i == 1) 
+		{
+			currentValue++;
+		}
+		totalValue = lastValue1 + currentValue;
+		std::cout << totalValue << std::endl;
+		if (i != 1) 
+		{
+			lastValue1 = currentValue;
+		}
+		currentValue = totalValue;
+		
+	}
+	return currentValue;
+} */
+
+
+
+/*                                                               AVERAGE OF 5 FUNCTION
+int averageOfFive(int a, int b, int c, int d, int e) 
+{
+	std::cout << "Please enter 5 numbers to get the average of them." << std::endl;
+	std::cin >> a >> b >> c >> d >> e;
+
+	int f = (a + b + c + d + e) / 5;
+
+	return f;
+} */
+
+
+
+/*                                                                AREA OF RECT FUNCTION
+float areaOfRectangle(float width, float height) 
+{
+	return width * height;
+}*/
+
+
+
+/*                                                                   TRIANGLE FUNCTION
+//int numberOfRows(int rows)
+{
+	std::cout << "Please enter how many rows you would like:" << std::endl;
+	std::cin >> rows;
+
+	int totalDots = 0;
+
+	for (int i = rows; i > 0; i--)
+	{
+		totalDots += i;
+	}
+
+	std::cout << "Total number of dots for a triangle with " << rows << " rows will be " << totalDots << "." << std::endl;
+	return totalDots;
+}  */
+
+
+
+
+/*                                                                   TEMP TASK FUNCTION
+float degCalculation(float cel)
+{
+	std::cout << "Please enter a temperature in Celsius to convert to Fahrenheit then press enter: " << std::endl;
+	std::cin >> cel;
+	return cel * 9 / 5 + 32;
+}  */
+int main()                                                     
+{
+	// factoralCalc(0);                                              FACTORAL CALC
+
+
+	//fibSeq(16);                                                      FIBONACCI CALL
+
+
+	/*                                                              AVERAGE OF 5 CALL
+	int f = averageOfFive(0, 0, 0, 0, 0);
+	std::cout << "The average of these 5 numbers is: " << f << std::endl;
+	std::cout << "The average of these 5 numbers / 2 is " << (f / 2) << std::endl;
+	std::cout << "The average of these 5 numbers / 2 * by 10 is : " << (f * 10) << std::endl;             + a little extra to make sure its tracking f*/
+
+	              /*                                                   AREA OF RECT CALL
+
+	float area = areaOfRectangle(15.5f, 21.5f);
+	std::cout << "The area of this rectangle is " << area << "." << std::endl;*/
+
+
+
+	// numberOfRows(0);                                             TRIANGLE CALL
+
+	/*
+	1. a static local variable is a variable stored in the main function, a global variable is stored outside of main
+	2. 
+	*/
+	
+	
+	
+	
+	
+	/*                                                         TRUE OR FALSE #2
+	A - true
+	B - false    (this is true, i got this wrong)
+	C - false
+	D - true
+	E - false
+ 
+ */
+
+
+
+
+	//                                                TRUE OR FALSE
+	/*
+	A.true
+	B.false
+	C.no idea
+	D.true
+	E.true
+	F.false
+	G.true
+	H.false
+	I.true
+	J.true
+	*/
+
+
+
+
+
+	/*                                                     MONTHS TO INTS
+	int monthInput = 0;
+
+	int daysThirty = 30;
+	int daysOne = 31;
+	int daysFeb = 28;
+
+	std::cout << "Please enter the number of a month: " << std::endl;
+	std::cin >> monthInput;
+
+	switch (monthInput)
+	{
+	case 1:
+		std::cout << "The month is January, it has " << daysOne << " days!" << std::endl;
+		break;
+
+	case 2:
+		std::cout << "The month is Febuary, it has " << daysFeb << " days!" << std::endl;
+		break;
+
+	case 3:
+		std::cout << "The month is March, it has " << daysOne << " days!" << std::endl;
+		break;
+
+	case 4:
+		std::cout << "The month is April, it has " << daysThirty << " days!" << std::endl;
+		break;
+
+	case 5:
+		std::cout << "The month is May, it has " << daysOne << " days!" << std::endl;
+		break;
+
+	case 6:
+		std::cout << "The month is June, it has " << daysThirty << " days!" << std::endl;
+		break;
+
+	case 7:
+		std::cout << "The month is July, it has " << daysOne << " days!" << std::endl;
+		break;
+
+	case 8:
+		std::cout << "The month is August, it has " << daysOne << " days!" << std::endl;
+		break;
+
+	case 9:
+		std::cout << "The month is September, it has " << daysThirty << " days!" << std::endl;
+		break;
+
+	case 10:
+		std::cout << "The month is October, it has " << daysOne << " days!" << std::endl;
+		break;
+
+	case 11:
+		std::cout << "The month is November, it has " << daysThirty << " days!" << std::endl;
+		break;
+
+	case 12:
+		std::cout << "The month is December, it has " << daysOne << " days!" << std::endl;
+		break;
+
+	default:
+		std::cout << "I'm sorry you did not enter a correct number, please try again.." << std::endl;
+		break;
+	} */
+	
+	
+	
+	
+	/*                                                             SWITCH STATEMENT CALCULATOR
 	int first = 0;
 	int second = 0;
 	char oper;
@@ -309,7 +545,13 @@ int main()
 	std::cout << "Area: " << rectArea << std::endl; **/
 	
 	
-	/**                                                                 TEMP TASK
+	  //                                                                 TEMP TASK
+
+	
+	/*float f = degCalculation(0);                                    TEMP TASK FUNCTION CALL
+	std::cout << "Temp in Farh is: " << f << std::endl;*/
+
+/*
 	float degCelsius = 0.0f;
 	float degFahrenheit = 0.0f;
 
@@ -320,7 +562,7 @@ int main()
 
 	std::cout << "Celsius to Fahrenheit)" << std::endl;
 	std::cout << "Celsius: " << degCelsius << std::endl;
-	std::cout << "Fahrenheit: " << degFahrenheit << std::endl; **/
+	std::cout << "Fahrenheit: " << degFahrenheit << std::endl;  */
 	
 	
 	/**                                                             USER INPUT TASK
