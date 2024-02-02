@@ -1,6 +1,51 @@
 #include <iostream>
+#include <string>
+#include "Circle.h"
+#include "Rectangle.h"
 
+/*int addNumbers()
+{
+	int numCount = 0;
+	int totalNumbers = 0;
+	bool inputting = true;
+	int numberAdded = 0;
+	char character = '.';
+	int numAve = 0;
 
+	while (inputting) 
+	{
+		std::cout << "Please input a number: " << std::endl;
+		std::cin >> numberAdded;
+
+		if (std::cin.fail()) {
+			std::cin.clear();
+
+			std::cin >> character;
+
+			if (character == 'q' || 'Q') 
+			{
+				inputting = false;
+			}
+			else
+			{
+				std::cout << "Your input is invalid" << std::endl;
+				std::cin.clear();
+				std::cin.ignore(std::cin.rdbuf()->in_avail());
+			}
+		}
+		else
+		{
+			numCount++;
+			totalNumbers = numberAdded + totalNumbers;
+			numAve = totalNumbers / numCount;
+			continue;
+		}
+	}
+
+	std::cout << "Total number is: " << totalNumbers << std::endl;
+	std::cout << "The average of your number: " << numAve;
+	return totalNumbers;
+}*/
 
 
 
@@ -107,12 +152,35 @@ float degCalculation(float cel)
 	std::cin >> cel;
 	return cel * 9 / 5 + 32;
 }  */
-int main()                                                     
+extern const float PI = 3.14f;
+int main()
+
 {
+	Rectangle rectangle1 = {};
+
+	rectangle1.SetLength(13);
+	rectangle1.SetWidth(25);
+
+	std::cout << "The rectangles Length is: " << rectangle1.GetLength() << std::endl;
+	std::cout << "The rectangles Width is: " << rectangle1.GetWidth() << std::endl;
+	std::cout << "The rectangles Area is: " << rectangle1.GetArea() << std::endl;
+	
+
+	Circle circle1 = {};
+
+	circle1.SetRadius(8.f);
+
+	std::cout << "The circles radius is: " << circle1.GetRadius() << std::endl;
+	std::cout << "The circles area is: " << circle1.GetArea() << std::endl;
+	std::cout << "The circles Circumference is: " << circle1.GetCircumference() << std::endl;
+
+	// addNumbers();
+
+
 	// factoralCalc(0);                                              FACTORAL CALC
 
 
-	//fibSeq(16);                                                      FIBONACCI CALL
+	// fibSeq(16);                                                     FIBONACCI CALL
 
 
 	/*                                                              AVERAGE OF 5 CALL
